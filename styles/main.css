@@ -258,6 +258,7 @@ a:where(:hover, :focus, :focus-visible) {
   --btn-hover-border-clr: var(--clr-gray-900);
 
   font-size: var(--fs-600);
+  border-radius: 100vmax;
 }
 
 /** Content - End **/
