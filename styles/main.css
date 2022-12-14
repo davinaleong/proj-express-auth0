@@ -5,6 +5,9 @@
       - Content - Layout
       - Content - Primary Header
       - Content - Main Content
+    - Pages
+      - Pages - Login
+      - Pages - Dashboard
     - Utility
       - Utility - Colours
       - Utility - Background Colours
@@ -257,8 +260,11 @@ a:where(:hover, :focus, :focus-visible) {
   font-size: var(--fs-600);
 }
 
-/** Content - Main Content **/
-.main-grid {
+/** Content - End **/
+
+/** Pages **/
+/** Pages - Login **/
+.main-grid-login {
   display: grid;
   grid-template-columns: auto;
   grid-template-rows: 0.25fr 0.75fr;
@@ -267,7 +273,7 @@ a:where(:hover, :focus, :focus-visible) {
 }
 
 @media (min-width: 48em) {
-  .main-grid {
+  .main-grid-login {
     display: grid;
     grid-template-columns: 0.3fr 0.7fr;
     grid-template-rows: auto;
@@ -289,7 +295,31 @@ a:where(:hover, :focus, :focus-visible) {
   width: 1em;
 }
 
-/** Content - End **/
+/** Pages - Dashboard **/
+.pg-dashboard .btn-accent {
+  font-size: var(--fs-400);
+}
+
+.main-grid-admin {
+  width: 100%;
+  display: grid;
+  grid-template-rows: max-content auto;
+  grid-template-columns: 18.75em auto;
+  min-height: 100vh;
+}
+
+.primary-admin-header-grid {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.primary-admin-header-buttons {
+  display: flex;
+  justify-content: flex-end;
+}
+
+/** Pages - End **/
 
 /** Utility **/
 .visually-hidden {
